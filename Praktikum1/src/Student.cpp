@@ -2,20 +2,19 @@
  * Student.cpp
  *
  *  Created on: 13.10.2014
- *      Author: myroo_000
+ *      Author: wir
  */
-
-#include "Student.h"
 
 namespace srt {
 
-Student::Student() {
-	// Hallo Philipp
+class Student {
+private:
+	int matriculationNumber;
+	char name[10];
+	char surname[10];
+	int dateOfBirth;
 
-}
 
-Student::~Student() {
-	// TODO Auto-generated destructor stub
-}
 
-} /* namespace srt */
+};
+
