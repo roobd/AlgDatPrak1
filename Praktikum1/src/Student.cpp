@@ -10,7 +10,7 @@
 namespace srt {
 
 Student::Student() {
-	// TODO Auto-generated constructor stub
+	// Hallo Philipp
 
 }
 
