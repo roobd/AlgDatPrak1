@@ -39,12 +39,12 @@ public:
 	int getMatriculationNumber(){
 		return matriculationNumber;
 	}
-//	char getName(){
-//		return name;
-//	}
-//	char getSurname(){
-//		return surname;
-//	}
+	char * getName(){
+		return name;
+	}
+	char * getSurname(){
+		return surname;
+	}
 	int getDateOfBirth(){
 		return dateOfBirth;
 	}
