@@ -8,13 +8,9 @@
 namespace srt {
 
 class Student {
-private:
-	int matriculationNumber;
-	char name[10];
-	char surname[10];
-	int dateOfBirth;
+	Student::Student(int matriculationNumber, char name[10], char surname[10],int dateOfBirth){
 
-
+	}
 
 };
 
