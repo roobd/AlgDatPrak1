@@ -6,32 +6,32 @@
  */
 
 
-namespace std{
+
 class Student{
 private:
-	int matriculationNumber = 0;
+	int matriculationNumber;
 	char name[10];
 	char surname[10];
-	int dateOfBirth = 0;
+	int dateOfBirth;
 
 public:
-	bool operator==(Student lhs, Student rhs){
-		return lhs.matriculationNumber == rhs.matriculationNumber;
+	bool operator== (Student rhs){
+		return matriculationNumber == rhs.matriculationNumber;
 	}
-	bool operator!=(Student lhs, Student rhs){
-		return lhs.matriculationNumber != rhs.matriculationNumber;
+	bool operator!= (Student rhs){
+		return matriculationNumber != rhs.matriculationNumber;
 	}
-	bool operator<=(Student lhs, Student rhs){
-		return lhs.matriculationNumber <= rhs.matriculationNumber;
+	bool operator<= (Student rhs){
+		return matriculationNumber <= rhs.matriculationNumber;
 	}
-	bool operator>=(Student lhs, Student rhs){
-		return lhs.matriculationNumber >= rhs.matriculationNumber;
+	bool operator>= (Student rhs){
+		return matriculationNumber >= rhs.matriculationNumber;
 	}
-	bool operator<(Student lhs, Student rhs){
-		return lhs.matriculationNumber < rhs.matriculationNumber;
+	bool operator< (Student rhs){
+		return matriculationNumber < rhs.matriculationNumber;
 	}
-	bool operator>(Student lhs, Student rhs){
-		return lhs.matriculationNumber > rhs.matriculationNumber;
+	bool operator> (Student rhs){
+		return matriculationNumber > rhs.matriculationNumber;
 	}
 	Student(int matriculationNumber, char name[10], char surname[10], int dateOfBirth);
 	~Student();
