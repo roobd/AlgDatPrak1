@@ -16,8 +16,23 @@ private:
 	int dateOfBirth = 0;
 
 public:
-	bool operator==(Student const& lhs, Student const& rhs){
+	bool operator==(Student lhs, Student rhs){
 		return lhs.matriculationNumber == rhs.matriculationNumber;
+	}
+	bool operator!=(Student lhs, Student rhs){
+		return lhs.matriculationNumber != rhs.matriculationNumber;
+	}
+	bool operator<=(Student lhs, Student rhs){
+		return lhs.matriculationNumber <= rhs.matriculationNumber;
+	}
+	bool operator>=(Student lhs, Student rhs){
+		return lhs.matriculationNumber >= rhs.matriculationNumber;
+	}
+	bool operator<(Student lhs, Student rhs){
+		return lhs.matriculationNumber < rhs.matriculationNumber;
+	}
+	bool operator>(Student lhs, Student rhs){
+		return lhs.matriculationNumber > rhs.matriculationNumber;
 	}
 
 
