@@ -5,9 +5,8 @@
  *      Author: myroo_000
  */
 
-#ifndef STUDENT_H_
-#define STUDENT_H_
 
+namespace std{
 class Student{
 private:
 	int matriculationNumber = 0;
@@ -34,10 +33,22 @@ public:
 	bool operator>(Student lhs, Student rhs){
 		return lhs.matriculationNumber > rhs.matriculationNumber;
 	}
+	Student(int matriculationNumber, char name[10], char surname[10], int dateOfBirth);
+	~Student();
 
-
+	int getMatriculationNumber(){
+		return matriculationNumber;
+	}
+	char getName(){
+		return name;
+	}
+	char getSurname(){
+		return surname;
+	}
+	int getDateOfBirth(){
+		return dateOfBirth;
+	}
 };
+}
 
 
-
-#endif /* STUDENT_H_ */
