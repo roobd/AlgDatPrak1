@@ -6,6 +6,7 @@
  */
 
 
+using namespace std;
 
 class Student{
 private:
@@ -34,21 +35,20 @@ public:
 		return matriculationNumber > rhs.matriculationNumber;
 	}
 	Student(int matriculationNumber, char name[10], char surname[10], int dateOfBirth);
-	~Student();
 
 	int getMatriculationNumber(){
 		return matriculationNumber;
 	}
-	char getName(){
-		return name;
-	}
-	char getSurname(){
-		return surname;
-	}
+//	char getName(){
+//		return name;
+//	}
+//	char getSurname(){
+//		return surname;
+//	}
 	int getDateOfBirth(){
 		return dateOfBirth;
 	}
 };
-}
+
 
 

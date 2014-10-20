@@ -6,12 +6,11 @@
  */
 #include <iostream>
 #include "Student.h"
-namespace std{
 
 Student::Student(int matriculationNumber, char name[10], char surname[10], int dateOfBirth){
 	this->matriculationNumber = matriculationNumber;
-	this->name = name;
-	this->surname = surname;
+//	this->name = name;
+//	this->surname = surname;
 	this->dateOfBirth = dateOfBirth;
 }
 
@@ -19,9 +18,9 @@ int main(){
 	char phil[10] = {'P','h','i','l'};
 	char nach[10] = {'D','u'};
 	Student Phil(1234,phil,nach,120891);
-	std::cout << "Datum = " << Phil.getDateOfBirth();
+	cout << "Datum = " << Phil.getDateOfBirth();
 	return 0;
 }
-}
+
 
 
