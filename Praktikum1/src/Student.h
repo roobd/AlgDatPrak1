@@ -37,7 +37,7 @@ public:
 
 	Student();
 
-	Student(int matriculationNumber, char name[10], char surname[10], int dateOfBirth);
+	Student(char name[10], char surname[10], int dateOfBirth, int matriculationNumber);
 
 	virtual ~Student(){};
 

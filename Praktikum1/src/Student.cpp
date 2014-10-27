@@ -15,7 +15,7 @@ Student::Student(){
 	this->matriculationNumber = 0;
 	this->dateOfBirth = 0;
 }
-Student::Student(int matriculationNumber, char name[10], char surname[10], int dateOfBirth){
+Student::Student(char name[10], char surname[10], int dateOfBirth, int matriculationNumber){
 	this->matriculationNumber = matriculationNumber;
 	strncpy(&(this->name[0]), &(name[0]), 10);
 	strncpy(this->surname, surname, 10);
@@ -24,9 +24,10 @@ Student::Student(int matriculationNumber, char name[10], char surname[10], int d
 
 
 int main(){
-	char phil[10] = {'P','h','i','l'};
+	char vor[10] = {'P','h','i','l'};
 	char nach[10] = {'D','u'};
-	Student Phil(1234,phil,nach,120891);
+	Student Phil(vor,nach,120891,1234);
+	cout << Phil;
 	Student Rob;
 	cin >> Rob;
 	cout << Rob;
