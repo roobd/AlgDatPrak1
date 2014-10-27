@@ -34,7 +34,12 @@ public:
 	bool operator> (Student rhs){
 		return matriculationNumber > rhs.matriculationNumber;
 	}
+
+	Student();
+
 	Student(int matriculationNumber, char name[10], char surname[10], int dateOfBirth);
+
+
 
 	int getMatriculationNumber(){
 		return matriculationNumber;
@@ -48,6 +53,8 @@ public:
 	int getDateOfBirth(){
 		return dateOfBirth;
 	}
+	void write(ostream& ostr);
+	void read(istream& istr);
 };
 
 
