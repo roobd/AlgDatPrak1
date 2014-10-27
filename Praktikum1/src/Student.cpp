@@ -24,10 +24,23 @@ Student::Student(char name[10], char surname[10], int dateOfBirth, int matricula
 
 
 int main(){
-	char vor[10] = {'P','h','i','l'};
-	char nach[10] = {'D','u'};
-	Student Phil(vor,nach,120891,1234);
+	char vor1[10] = {'P','h','i','l'};
+	char nach1[10] = {'D','u'};
+	Student Phil(vor1,nach1,120891,1234);
 	cout << Phil;
+
+	char vor2[10] = {'F','l','o'};
+	char nach2[10] = {'A','l'};
+	Student Flo(vor2,nach2,231293,1234);
+	cout << Flo;
+
+	cout << (Phil == Flo) << endl ;
+	cout << (Phil != Flo) << endl ;
+	cout << (Phil <= Flo) << endl ;
+	cout << (Phil < Flo) << endl ;
+	cout << (Phil >= Flo) << endl ;
+	cout << (Phil > Flo) << endl ;
+
 	Student Rob;
 	cin >> Rob;
 	cout << Rob;
