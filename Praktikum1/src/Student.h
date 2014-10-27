@@ -39,6 +39,7 @@ public:
 
 	Student(int matriculationNumber, char name[10], char surname[10], int dateOfBirth);
 
+	virtual ~Student(){};
 
 
 	int getMatriculationNumber(){
@@ -53,9 +54,16 @@ public:
 	int getDateOfBirth(){
 		return dateOfBirth;
 	}
-	void write(ostream& ostr);
-	void read(istream& istr);
-};
+	void write(ostream& ostr)const{
+		ostr << "Vorname: " << name << endl << "Name: " << surname << endl << "Geburstdatum: " << dateOfBirth << endl << "Matrikelnummer: " << matriculationNumber << endl;
+	}
+	virtual void read(istream& istr){
+		istr >> name >> surname >> dateOfBirth >> matriculationNumber;
+	}
 
+
+};
+ostream& operator << (ostream& ostr, const Student&stud);
+istream& operator >> (istream& istr, Student& stud);
 
 
