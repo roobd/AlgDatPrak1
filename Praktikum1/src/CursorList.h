@@ -8,11 +8,12 @@
 #ifndef CURSORLIST_H_
 #define CURSORLIST_H_
 #define NUMENTRIES 10
+
 template <class T> class CursorList {
 public:
  typedef T value_type;
- typedef ListIterator<T> iterator;
-2
+ typedef CursorIterator<T> iterator;
+
  bool empty() const;
  int size() const;
  T& front() const;
