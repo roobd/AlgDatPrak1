@@ -29,7 +29,7 @@ private:
 	 T data;
 	 int prev;
 	 int next;
- }zeileT;
+ } zeileT;
  zeileT list[NUMENTRIES];
 
 };
